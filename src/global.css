@@ -8,6 +8,7 @@
 
 :root {
   --bio-height: 300px;
+  --pop-color: rgb(235, 235, 235);
 }
 
 body {
@@ -28,6 +29,10 @@ p {
   line-height: 2rem;
 }
 
+a {
+  color: black;
+}
+
 .container {
   width: 100%;
   margin: 3rem auto;
@@ -41,13 +46,13 @@ p {
   position: fixed;
   width: 590px;
   height: var(--bio-height);
-  top: 9rem;
+  top: 10rem;
   font-weight: 500;
   font-size: 24px;
 }
 .applications {
   width: 45%;
-  /* background-color: rgb(255, 123, 0); */
+  /* background-color: rgba(246, 246, 246, 0.322); */
 }
 
 .icon {
@@ -59,10 +64,16 @@ p {
   font-size: 2rem;
 }
 .icon-links * {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 /* APPLICATIONS */
+
+.app-text {
+  width: 490px;
+  text-align: left;
+  /* background-color: cadetblue; */
+}
 
 .app-card {
   display: flex;
@@ -90,6 +101,32 @@ p {
 .link-btn {
   color: black;
   text-decoration: none;
-  border: blue 1px solid;
-  padding: 5px 1rem;
+  border: black 1px solid;
+  padding: 2px 10px 4px 10px;
+  margin: 0 10px;
+}
+
+.link-btn:hover {
+  background-color: var(--pop-color);
+  border-color: var(--pop-color);
+}
+
+.tinyIcon {
+  vertical-align: middle;
+}
+
+.disabled-btn {
+  background-color: rgba(231, 231, 231, 0.315);
+  color: rgb(168, 168, 168);
+  border: rgb(168, 168, 168) 1px solid;
+  padding: 2px 10px 4px 10px;
+  margin: 0 10px;
+  cursor: default;
+}
+
+.app-text-header {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

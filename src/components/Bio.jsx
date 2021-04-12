@@ -9,9 +9,16 @@ function Bio() {
         background in art and a passion for building web apps that are intuitive
         and fun to use.
       </p>
+      <p>
+        When I'm not coding I'm either rock climbing or playing with my cats.
+      </p>
       <div className="icon-links">
-        <i className="fab fa-github"></i>
-        <i className="fab fa-linkedin-in"></i>
+        <a href="https://github.com/lexykio">
+          <i className="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lexyk/">
+          <i className="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </div>
   );
