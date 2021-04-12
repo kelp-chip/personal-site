@@ -6,7 +6,9 @@ function Layout() {
     <>
       <Bio />
       <div className="container">
-        <div className="applications"></div>
+        <div className="applications">
+          <Applications />
+        </div>
       </div>
     </>
   );
